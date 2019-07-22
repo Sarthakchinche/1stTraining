@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>table</title>
+</head>
+<body>
+<input type="text" name="row" placeholder="Enter rows" id="nr">
+<input type="text" name="column" placeholder="Enter column" id="nc">
+<button onclick="createTable()">Click here</button>
+<div id="parentContainer">
+</div>
+<script type="text/javascript">
+function createTable(){
+     var row = parseInt(document.getElementById('nr').value);
+     var col = parseInt(document.getElementById('nc').value);
+     //console.log(col);
+     var tab = document.createElement("table");
+     tab.border = '2';
+     for ( var i = 0; i < row; i++)
+     {
+     var tr  = document.createElement("tr");
+     for(var j = 0;j < col;j++)
+     {
+     var td = document.createElement("td");
+     td.innerHTML = "Hello";
+     tr.appendChild(td);
+    }
+     tab.appendChild(tr);
+     }
+    document.getElementById("parentContainer").appendChild(tab);
+
+ }
+</script>
+</body>
+</html>

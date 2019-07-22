@@ -1,0 +1,92 @@
+body{
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.head{
+	background-color: black;
+	height: 25px;
+}
+.head2{
+	background-color: black;
+	height: 5px;
+}
+.logo{
+	height: 100px;
+}
+nav{
+	height: 100px;
+	background-color: #F4611D;
+}
+nav ul{
+	float: right;
+	margin-right: 80px;
+	list-style-type: none;
+	margin-top: 30px;
+}
+nav ul a{
+	
+  color: white;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  padding-top: 10px;
+  font-size: 25px;
+  margin-top: 5px;
+  text-shadow: transparent;
+
+}
+nav li{
+	display: inline;
+
+}
+a:hover { 
+  background-color: black;
+  transition: 500ms;
+}
+.head input{
+	width: 150px;
+	border-radius: 10px;
+	margin-right: 5px; 
+	float: right;
+}
+.head a{
+	display: inline;
+  color: white;
+  text-decoration:none;
+  margin-left: 20px;
+  margin-top: 3px;
+}
+.head button{
+	width: 45px; 
+	height: 20px;
+	float: right;
+	margin-right: 5px;
+	background-color: #1D8FF4;
+}
+.form-class{
+	    padding-top: 50px;
+    /* color: black; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    height: 100vh;
+}
+form{
+	display: inline-grid;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    position: absolute;
+    color: white;}
+.form-class input{
+	color:black;
+	border-radius: 10px;
+}
+button{
+	border-radius: 10px;
+}
+button:hover{
+	background-color: gray;
+	transition: 500ms;
+}

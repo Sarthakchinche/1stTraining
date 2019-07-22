@@ -1,0 +1,99 @@
+body{
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.head{
+	background-color: black;
+	height: 25px;
+}
+.head2{
+	background-color: black;
+	height: 5px;
+}
+.logo{
+	height: 100px;
+}
+nav{
+	height: 100px;
+	background-color: #F4611D;
+}
+nav ul{
+	float: right;
+	margin-right: 80px;
+	list-style-type: none;
+	margin-top: 30px;
+}
+nav ul a{
+	
+  color: white;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  padding-top: 10px;
+  font-size: 25px;
+  margin-top: 5px;
+  text-shadow: transparent;
+
+}
+nav li{
+	display: inline;
+
+}
+a:hover { 
+  background-color: black;
+  transition: 500ms;
+}
+input{
+	width: 150px;
+	border-radius: 10px;
+	margin-right: 5px; 
+	float: right;
+}
+a{
+	display: inline;
+  color: white;
+  text-decoration:none;
+  margin-left: 20px;
+  margin-top: 3px;
+}
+button{
+	width: 45px; 
+	height: 20px;
+	float: right;
+	margin-right: 5px;
+	background-color: #1D8FF4;
+}
+.content-left{
+	background-color: rgba(0,0,0,0.5);
+	width: 50%;
+	padding-left: 30px;
+}
+.content h1{
+	color: white;
+
+}
+.content p{
+	color: white;
+}
+.content b{
+	font-size: 20px;
+}
+.content i{
+	font-size: 20px;
+}
+.content-right{
+	background-color: rgba(0,0,0,0.7);
+	width: 50%;
+	height: 20%;
+	overflow-y: scroll;
+	padding-left: 30px;
+	color: white;
+}
+.content{
+	display: flex;
+}
+
+.content-right h1{
+	text-align: center;
+}

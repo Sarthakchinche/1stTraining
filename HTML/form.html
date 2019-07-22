@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="new 3.css">
+<link rel="stylesheet" type="text/css" href="responsive1.css">
+<link rel="stylesheet" type="text/css" href="Responsive.css">
+<link rel="stylesheet" type="text/css" href="about us.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" language="javascript" src='js.js'></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-YOGYglPMVbD-s1YkfPmnHwtA2xBwjO8&callback=initMap"></script>
+<link rel="stylesheet" type="text/css" href="form.css">
+<script type="text/javascript" language="javascript" src='form.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" language="javascript" src='js.js'></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-YOGYglPMVbD-s1YkfPmnHwtA2xBwjO8&callback=initMap"></script>
+<title>Purusharth</title>
+<body background="8606.jpg">
+  <div class="header">
+    <div class = "question" style="overflow: auto;">
+      <a class="questionlink" href="#popup1">Have any Questions?</a>
+      <div id="popup1" class="overlay">
+  <div class="popup">
+    <h2 class="h2">Ask a Question!</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      <textarea id="description_id" onkeyup="new do_resize(this);" class="questiontext" cols="20" rows="1" name="description_name" required></textarea>
+    </div><br>
+    <center><button class="questionsend" id="questionsend" onclick="quest()">Send</button></center>
+  </div>
+</div>
+    <div class="call">
+      <img class="phone" width="18px" height="18" class="call"  src="12.jpg">9893095023
+    </div>
+      <div class= "maillogo">
+      <img width="25px" height="25px" align="left" src="11.jpg">purusharth.careerclasses@gmail.com
+    </div>
+    </div>
+    </div>
+    <div class="header1" id="myTopnav">
+  <a href="new 3.html" class="tag"><strong>PURUSHARTH</strong>
+  <p>Compete with yourself</p>
+</a>
+  <div class="header-right">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses </a>
+     <a href="#">Materials</a> 
+   <a href="about us.html">About Us</a>
+   <a href="contact.html">Contact Us</a>
+   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</div>
+
+<div class="name"><center><h>REGISTRATION FORM</h></center>
+</div>
+<br>
+<table>
+<tr class="formrow">
+<td class="formdata" colspan="5">
+<div class="container">
+
+     <form action="sendmail.php" method="post">
+						      <label for="name">Full Name</label>
+                              <input type="text" id="fname" name="name" placeholder="Full Name" required>
+							  <label for="Date">Date Of Birth</label>
+                              <input type="Date" id="fname" name="date" required>
+							  <label for="gender">Gender</label><br>
+							  <input class="w3-radio" type="radio" name="gender" value="male" checked>
+                              <label>Male</label>
+                              <input class="w3-radio" type="radio" name="gender" value="female" >
+                              <label>Female</label><br><br>
+							  <label for="Address">Address</label>
+                              <input type="text" id="fname" name="address" placeholder="Full Address" required>
+							  <label for="email">Email</label>
+                              <input type="email" id="fname" name="email" placeholder="Mail" required>
+							  <label for="phone">Contact</label>
+                              <input type="tel" id="fname" name="contact" placeholder="Mob.No" required>
+							  <div class="multiselect">
+							  	<label for="courses">Courses</label>
+                <div class="dropbtn" onclick="showCheckboxes()">
+                    <select>
+                    <option>Select your Courses</option>
+                    </select>
+                </div>
+                <div id="checkboxes">
+                    <label for="one">
+                    <input type="checkbox" id="one" name="courses">PSC</label>
+                    <label for="two">
+                    <input type="checkbox" id="two" name="courses">Railway</label>
+                    <label for="three">
+                    <input type="checkbox" id="three" name="courses">M.P. Police</label>
+					 <label for="four">
+					<input type="checkbox" id="four" name="courses">Banking</label>
+                    <label for="five">              
+                    <input type="checkbox" id="five" name="courses">Campus Placements</label>
+                    <label for="six">
+                        <input type="checkbox" id="six" name="courses">CAT
+                    </label>
+                    <label for="seven">
+                    <input type="checkbox" id="seven" name="courses">Labour Inspector</label>
+                    <label for="eight">
+                    <input type="checkbox" id="eight" name="courses">UPSC</label>
+                </div>
+                </div><br><br>
+   							  <input type="checkbox">
+                              <label style="font-size:15px">I agree with all the terms and conditions</label>
+							  <button type="submit" name="submit" class="button button2">Submit</button>
+						</form>
+</div>
+</td>
+</tr>
+</table>
+
+        <br><br>
+<div class="nodata1"></div>
+
+        <table class="footertable">
+<tr class="footerrow">
+  <td id ="map"></td>
+  <td  class="footer">
+     <h3>Address</h3>
+     <p class="footerp">17,H.I.G Civil Lines,Chamunda Complex<br>behind Indian Coffee House,<br>near B.J.P karyalay,<br>Dewas(M.P.)</p>
+  </td>
+  <td class="contac">
+    <h3>Contact Us</h3>
+    <p>Mob.: 9893095023</p>
+    <center>
+    <a href="https://www.facebook.com/PurusharthConsultancy/" class="fa fa-facebook">
+      <a href="#" class="fa fa-google"></a>
+    </a></center>
+  </td>  
+<td class="card">
+  <img src="DSC_1695.jpg" alt="Pratik" style="width:100%">
+  <h4>Pratik Gawshinde</h4>
+  <p class="title">CEO & Founder <br>Purusharth</p> 
+  </td>
+</tr>
+</table>
+</body>
+</html>

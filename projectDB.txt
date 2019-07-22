@@ -1,0 +1,39 @@
+create database EventManagement;
+
+use EventManagement;
+
+  table to manage user->
+
+	create table user(USER_ID INT AUTO_INCREMENT PRIMARY KEY,USER_NAME VARCHAR(40) NOT NULL,CONTACT VARCHAR(10) UNIQUE NOT NULL,EVENTS VARCHAR(20) NOT NULL,foreign key(EVENTS) REFERENCES events(CATEGORIES) ON DELETE CASCADE,);
+
+	INSERT INTO user(USER_NAME,CONTACT,EVENTS) VALUES("SHYAM","8988916754","conferences");
+
+	INSERT INTO user(USER_NAME,CONTACT,EVENTS) VALUES("Ram","8985748954","ceremonies");
+
+	INSERT INTO user(USER_NAME,CONTACT,EVENTS) VALUES("MOHAN","8988916678","weddings");
+
+	INSERT INTO user(USER_NAME,CONTACT,EVENTS) VALUES("ROHAN","8988916123","formal parties");
+
+	INSERT INTO user(USER_NAME,CONTACT,EVENTS) VALUES("SOHAN","8988916321","concerts");
+
+	SELECT * FROM user;
+
+  table to manage events->
+
+  	create table events(CATEGORIES VARCHAR(20) PRIMARY KEY NOT NULL,EVENT_DATE DATE);
+
+  	INSERT INTO events(CATEGORIES,EVENT_DATE) VALUES("conferences","2019-02-10");
+
+  	INSERT INTO events(CATEGORIES,EVENT_DATE) VALUES("ceremonies","2019-03-02");
+
+  	INSERT INTO events(CATEGORIES,EVENT_DATE) VALUES("weddings","2019-07-09");
+
+  	INSERT INTO events(CATEGORIES,EVENT_DATE) VALUES("formal parties","2019-08-10");
+
+  	INSERT INTO events(CATEGORIES,EVENT_DATE) VALUES("concerts","2019-11-14");
+
+  	SELECT * FROM events;
+
+  table to schedule events->
+
+   select * from user where USER_NAME="SHYAM";
